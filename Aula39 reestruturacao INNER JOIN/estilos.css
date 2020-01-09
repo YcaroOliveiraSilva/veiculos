@@ -1,0 +1,303 @@
+*{
+	margin:0px;
+	padding:0px;
+	outline:0px;
+	background:transparent;
+	box-sizing:border-box;
+	color:#000;
+}
+body{
+	background-color:#fff;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+header,section,fooder{
+	display:flex;
+	justify-content:space-between;
+	padding-left:20px;
+	padding-right:20px;
+}
+header{
+	background:#000;
+	align-items:center;
+}
+header img{
+	margin:10px 0px;
+}
+header nav{
+	display:flex;
+}
+.btmenu{
+	text-decoration:none;
+	display:flex;
+	width:120px;
+	height:30px;
+	margin:2px;
+	padding:1px 5px;
+	background-color:#222;
+	border-radius:10px;
+	color:#bbb;
+	font-family:Arial;
+	font-size:10px;
+	cursor:pointer;
+	border:0px;
+	text-transform:uppercase;
+	outline:none;
+	justify-content:center;
+	align-items:center;
+}
+.btmenu:hover{
+	background-color:#c22;
+	color:#fff;
+}
+.banner{
+	justify-content:center;
+	align-items:center;
+}
+#s1,#s2,#s3,#s4,#s5{
+	opacity:0;
+	display:none;
+}
+.buscador{
+	flex-direction:column;
+	align-items:center;
+	margin:10px 0px;
+	padding-left:20%;
+	padding-right:20%;
+}
+.buscador p{
+	display:flex;
+	width:100%;
+	margin-top:10px;
+	justify-content:flex-start;
+}
+.buscador form{
+	width:100%;
+	border:1px solid #888;
+	border-radius:10px;
+	padding:10px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.destaques{
+	padding-left:20%;
+	padding-right:20%;
+	flex-wrap:wrap;
+}
+.destaque{
+	background-color:#000;
+	border-radius:100%;
+	padding:50px;
+}
+footer{
+	margin-top:10px;
+	background:#222;
+	padding:20px 0px;
+}
+
+
+/*  - FORMATAÇÃO ÁREA DE GERENCIAMENTO -  */
+#main, #carros{
+	padding-top:20px;
+	flex-direction:column;
+}
+
+#carros {
+	align-items: center;
+}
+
+#carros article {
+	width: 960px;
+	display: flex;
+	background: #eee;
+	margin-bottom: 15px;
+}
+
+#d2 {
+	width: 100%;
+}
+
+#titulo,#t1 {
+	display: flex;
+}
+
+#titulo {
+	justify-content: space-between;
+	background: #c22;
+	color: #222;
+	padding: 5px;
+}
+
+    #dados {
+    	padding: 5px;
+    }
+
+    #t1 a, #t2 p {
+    	color: #fff;
+    	font-weight: bold;
+    	text-decoration: none;
+    }
+
+    #t1 a:hover {
+    	text-decoration:underline;
+    }
+
+
+
+
+.menu_ger{
+	display:inline-block;
+}
+
+.menub{
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+	width:120px;
+	margin:0px;
+	background-color:#ddd;
+	border-radius:10px;
+	cursor:pointer;
+	border:0px;
+	visibility:hidden;
+}
+
+.menub a{
+	color:#000;
+	padding:12px 16px;
+	text-decoration:none;
+	display:block;
+	font-family:Arial;
+	font-size:10px;
+	text-transform:uppercase;
+}
+
+.menub a:hover{
+	color:#fff;
+	font-weight:bold;
+}
+#f_login input[type=text], input[type=password]{
+	display:block;
+	margin-bottom:15px;
+	padding:10px;
+	font-size:15px;
+	color:#888;
+	width:300px;
+}
+
+#f_login label{
+	font-size:20px;
+	color:#888;	
+}
+
+#f_login input[type=submit]{
+	text-decoration:none;
+	display:table-cell;
+	width:320px;
+	height:40px;
+	margin:0px;
+	padding:10px;
+	background-color:#222;
+	text-align:center;
+	vertical-align:middle;
+	border-radius:10px;
+	color:#bbb;
+	font-family:Arial;
+	font-size:15px;
+	cursor:pointer;
+	border:0px;
+	
+}
+
+#f_login input[type=submit]:hover{
+	background-color:#c22;
+	color:#FFF;
+}
+
+#lgErro{
+	color:#f00;
+	font-size:20px;
+	padding:5px;
+	border:5px solid #888;
+	border-radius:10px;
+	background-color:#eee;
+	text-align:center;
+	width:300px;
+}
+
+.f_colaborador input, select{
+	display:block;
+	margin-bottom:10px;
+	text-transform:uppercase;
+}
+
+.f_add_del{
+	border:5px solid #888;
+	border-radius:10px;
+	padding:15px;
+	margin-top:15px;
+	background-color:#bbb;
+	display:none;
+}
+
+.f_add_del form{
+	border-radius:10px;
+	padding:15px;
+	margin-bottom:10px;
+	background-color:#fff;
+}
+
+.f_novocarro input, select, textarea{
+	display:block;
+	margin-bottom:10px;	
+}
+
+.f_novocarro div{
+	border:1px solid #000;
+	display:block;
+	margin-bottom:10px;
+}
+
+.f_novocarro div input,label{
+	display:inline;
+}
+/*  - FIM DA FORMATAÇÃO DE GERENCIAMENTO -  */
+
+@media screen and (max-device-width:450px){
+	header,section,footer{
+		padding-left:3%;
+		padding-right:3%;
+	}
+	header{
+		flex-direction:column;
+	}
+	header img{
+		width:100%;
+		height:100%;
+	}
+	header nav{
+		flex-direction:column;
+		width:100%;
+	}
+	.btmenu{
+		width:100%;
+		height:80px;
+		font-size:30px;
+	}
+	.banner, footer, .destaques{
+		display:none;
+	}
+	.buscador{
+		padding-left:3%;
+		padding-right:3%;
+	}
+	.buscador form, .buscador p{
+		width:100%;
+        }
+	.buscador p, select, label {
+		font-size:30px;
+	
+
+        }
+} 
